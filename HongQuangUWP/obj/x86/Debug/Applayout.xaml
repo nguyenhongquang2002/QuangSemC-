@@ -1,0 +1,27 @@
+﻿<Page
+    x:Class="HongQuangUWP.Applayout"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HongQuangUWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <NavigationView x:ConnectionId='2' x:Name="MyNavView"                                                                            >
+        <NavigationView.MenuItems>
+            <NavigationViewItem  Content="AddName" Icon="Contact    " Tag="name"/>
+            <NavigationViewItem  Content="Search" Icon="Target" Tag="search"/>
+            <NavigationViewItemSeparator/>
+        </NavigationView.MenuItems>
+        <NavigationView.AutoSuggestBox>
+            <AutoSuggestBox>
+            </AutoSuggestBox>
+        </NavigationView.AutoSuggestBox>
+        <ScrollViewer>
+            <Frame x:ConnectionId='3' x:Name="ContentPage" Padding="10" />
+        </ScrollViewer>
+    </NavigationView>
+
+</Page>
+
